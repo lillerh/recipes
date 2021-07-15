@@ -8,7 +8,7 @@ import { Recipe } from '../../../../models/recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
 
-  // Do I have to initialize always ?
+  // Do I have to initialize always?
   @Input() recipe: Recipe=new Recipe('','','');
 
   constructor() { }
