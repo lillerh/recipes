@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Recipe } from '../../../../models/recipe.model';
 
 @Component({
@@ -7,13 +7,16 @@ import { Recipe } from '../../../../models/recipe.model';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-
-  // Do I have to initialize always?
   @Input() recipe: Recipe=new Recipe('','','');
+  @Output() selectedRecipe = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectingRecipe(){
+    this.selectedRecipe.emit();
   }
 
 }
