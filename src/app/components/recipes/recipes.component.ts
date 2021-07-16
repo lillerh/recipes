@@ -7,7 +7,7 @@ import { Recipe } from 'src/app/models/recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  selectedRecipe:Recipe = new Recipe('','','');
+  selectedRecipe:Recipe | undefined;
 
   constructor() { }
 
