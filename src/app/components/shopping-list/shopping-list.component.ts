@@ -2,7 +2,7 @@
 import { Component } from "@angular/core";
 import { ShoppingListEditComponent } from "./shopping-list-edit/shopping-list-edit.component";
 
-import { Ingredient } from '../../models/ingredient.model';
+import { Ingredient } from '../../shared/ingredient.model';
 
 @Component({
   selector:'app-shopping-list',
