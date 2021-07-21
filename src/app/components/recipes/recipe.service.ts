@@ -12,7 +12,7 @@ export class RecipeService {
     [
       new Ingredient('chicken breast', 2),
       new Ingredient('sparagus',10),
-      new Ingredient('almond',1),
+      new Ingredient('almond',1)
     ]),
     new Recipe('testRecipe2', 'another test',
     'https://images-na.ssl-images-amazon.com/images/I/41VdfOdxF9L._SX258_BO1,204,203,200_.jpg',
